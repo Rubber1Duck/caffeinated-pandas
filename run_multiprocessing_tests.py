@@ -1,13 +1,10 @@
-import pandas as pd
 import numpy as np
 from datetime import datetime
 import psutil 
-import gc #memory garbage collection
 
 import caffeinated_pandas_utils as cp
 from scipy import stats as scipy_stats
 
-import time
 
 
 def add_stats(df, bars1, bars2, bars3):

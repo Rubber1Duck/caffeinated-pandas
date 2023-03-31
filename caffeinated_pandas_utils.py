@@ -1,19 +1,15 @@
 import pandas as pd
 import numpy as np
 
-import psutil
 import os
-import io
 import glob
 import gc #memory garbage collection
 import sqlite3
 import hashlib
-from datetime import datetime
 import multiprocessing
 
 from pandas.api.types import CategoricalDtype
 
-import time
 
 def squeeze_dataframe(df):
 

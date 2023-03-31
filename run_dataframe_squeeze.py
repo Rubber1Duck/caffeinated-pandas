@@ -1,5 +1,3 @@
-import pandas as pd
-import numpy as np
 from datetime import datetime
 
 import caffeinated_pandas_utils as cp

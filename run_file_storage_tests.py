@@ -4,7 +4,6 @@ import numpy as np
 from datetime import datetime
 import os
 import gc #memory garbage collection
-import sys
 
 import caffeinated_pandas_utils as cp
 
@@ -97,7 +96,7 @@ def write_read_test(df, fn, compression='', iterations=3):
 fn = 'stock_test.csv'
 #num_symbols = 10_000
 #num_symbols = 1_000
-num_symbols = 100 #try this first and build up bigger
+num_symbols = 1_500 #try this first and build up bigger
 cp.create_test_dataframe(start_date='2000-01-01', end_date='2019-12-31', num_symbols=num_symbols, squeeze=False, out=fn) #comment out after first run to re-use file
 df = cp.read_file(fn)
 print('\n------- Test Dataframe -------\n', df)
