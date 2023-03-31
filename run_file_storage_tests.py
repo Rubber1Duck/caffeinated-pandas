@@ -91,7 +91,7 @@ def write_read_test(df, fn, compression='', iterations=3):
 
 
 #===== Main program
-
+start = datetime.utcnow()
 #----- Create a test Dataframe
 fn = 'stock_test.csv'
 #num_symbols = 10_000
@@ -146,3 +146,5 @@ write_read_test(df=df, fn='test-file-bz2.pkl', compression='bz2', iterations=ite
 
 write_read_test(df=df, fn='test-file.sqlite', iterations=iterations)
 
+end = datetime.utcnow()
+print('Totalprozessing time:', end-start)
